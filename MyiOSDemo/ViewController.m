@@ -12,6 +12,9 @@
 #import "LinkageViewController.h"
 #import "SecondListViewController.h"
 #import "ContainerTableViewController.h"
+#import "NSArrayTestViewController.h"
+#import "UIWebViewController.h"
+#import "CalenderTestViewController.h"
 #import <dlfcn.h>
 #import <libkern/OSAtomic.h>
 
@@ -26,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.array = [[NSMutableArray alloc] initWithObjects:@"cell 的移动", @"cell 的删除", @"cell 的添加", @"TableView 的联动", @"二级列表", @"侧边栏", nil];
+    self.array = [[NSMutableArray alloc] initWithObjects:@"cell 的移动", @"cell 的删除", @"cell 的添加", @"TableView 的联动", @"二级列表", @"侧边栏", @"NSArray Test", @"UIWebView", @"日历读写", nil];
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     tableView.delegate = self;
@@ -96,6 +99,21 @@
             [self.navigationController pushViewController:containerTableVC animated:YES];
             break;
         }
+        case 6: {
+            NSArrayTestViewController *nsArrayTest = [[NSArrayTestViewController alloc] init];
+            [self.navigationController pushViewController:nsArrayTest animated:YES];
+            break;
+        }
+        case 7: {
+            UIWebViewController *webViewTest = [[UIWebViewController alloc] init];
+            [self.navigationController pushViewController:webViewTest animated:YES];
+            break;
+        }
+        case 8: {
+            CalenderTestViewController *calenderTest = [[CalenderTestViewController alloc] init];
+            [self.navigationController pushViewController:calenderTest animated:YES];
+            break;
+        }
         default:
             break;
     }
@@ -126,6 +144,7 @@ typedef struct {
 // 添加处理c函数以及block前缀部分内容
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
+    NSLog(@"yingbo3 ViewController touchesBegan ");
     [super touchesBegan:touches withEvent:event];
     NSMutableArray *arr = [NSMutableArray array];
     while (YES) {
@@ -169,7 +188,7 @@ void __sanitizer_cov_trace_pc_guard(uint32_t *guard)
     void *PC = __builtin_return_address(0);
     Dl_info info;
     dladdr(PC, &info);
-    printf("%s \n", info.dli_sname);
+//    printf("%s \n", info.dli_sname);
     //获取上一个函数的地址，通过这个地址就能拿到函数的符号名称
     /*
      - PC 当前函数返回上一个调用的地址

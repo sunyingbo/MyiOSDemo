@@ -11,6 +11,8 @@
 
 @interface ContainerTableViewController ()
 
+@property (nonatomic, strong) UIView *alertView;
+
 @property (nonatomic, strong) NSMutableArray *linkageArray;
 @property (nonatomic, strong) UITableView *linkageTabelView;
 
@@ -25,9 +27,51 @@
     [super viewDidLoad];
     
     self.title = @"可用广告";
+    UIView *titleContainerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, self.navigationController.navigationBar.frame.size.height)];
+    titleContainerView.backgroundColor = [UIColor brownColor];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, self.navigationController.navigationBar.frame.size.height)];
+    titleLabel.backgroundColor = [UIColor yellowColor];
+    titleLabel.text = @"可用广告";
+    UIButton *titleBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    titleBtn.frame = CGRectMake(110, 0, 80, self.navigationController.navigationBar.frame.size.height);
+    titleBtn.backgroundColor = [UIColor blueColor];
+    [titleBtn setTitle:@"类型" forState:UIControlStateNormal];
+    [titleBtn addTarget:self action:@selector(titleBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [titleContainerView addSubview:titleLabel];
+    [titleContainerView addSubview:titleBtn];
+    self.navigationItem.titleView = titleContainerView;
+    
     [self configData];
     [self addFirstVC];
     [self addSecondVC];
+    
+    self.alertView = [[UIView alloc] initWithFrame:CGRectMake(200, 0, 100, 200)];
+    self.alertView.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:self.alertView];
+    [self.view bringSubviewToFront:self.alertView];
+    self.alertView.hidden = YES;
+    
+    UILabel *lable1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.alertView.frame.size.width, 50)];
+    lable1.text = @"开机";
+    [self.alertView addSubview:lable1];
+    
+    UILabel *lable2 = [[UILabel alloc] initWithFrame:CGRectMake(0, 50, self.alertView.frame.size.width, 50)];
+    lable2.text = @"前后台";
+    [self.alertView addSubview:lable2];
+}
+
+- (void)titleBtnClick:(UIButton *)sender
+{
+    if (self.alertView.hidden) {
+        self.alertView.hidden = NO;
+    } else {
+        self.alertView.hidden = YES;
+    }
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    self.alertView.hidden = YES;
 }
 
 - (void)configData
