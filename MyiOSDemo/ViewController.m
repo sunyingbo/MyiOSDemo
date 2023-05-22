@@ -9,12 +9,14 @@
 #import "MoveViewController.h"
 #import "DeleteViewController.h"
 #import "InsertViewController.h"
+#import "SwipCellTestViewController.h"
 #import "LinkageViewController.h"
 #import "SecondListViewController.h"
 #import "ContainerTableViewController.h"
 #import "NSArrayTestViewController.h"
 #import "UIWebViewController.h"
 #import "CalenderTestViewController.h"
+#import "UICollectionViewTestViewController.h"
 #import <dlfcn.h>
 #import <libkern/OSAtomic.h>
 
@@ -29,7 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.array = [[NSMutableArray alloc] initWithObjects:@"cell 的移动", @"cell 的删除", @"cell 的添加", @"TableView 的联动", @"二级列表", @"侧边栏", @"NSArray Test", @"UIWebView", @"日历读写", nil];
+    self.array = [[NSMutableArray alloc] initWithObjects:@"cell 的移动", @"cell 的删除", @"cell 的添加", @"SwipeTableCell", @"TableView 的联动", @"二级列表", @"侧边栏", @"NSArray Test", @"UIWebView", @"日历读写", @"UICollectionView", nil];
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     tableView.delegate = self;
@@ -85,33 +87,43 @@
             break;
         }
         case 3: {
+            SwipCellTestViewController *swipVC = [[SwipCellTestViewController alloc] init];
+            [self.navigationController pushViewController:swipVC animated:YES];
+            break;
+        }
+        case 4: {
             LinkageViewController *linkageVC = [[LinkageViewController alloc] init];
             [self.navigationController pushViewController:linkageVC animated:YES];
             break;
         }
-        case 4: {
+        case 5: {
             SecondListViewController *secondListVC = [[SecondListViewController alloc] init];
             [self.navigationController pushViewController:secondListVC animated:YES];
             break;
         }
-        case 5: {
+        case 6: {
             ContainerTableViewController *containerTableVC = [[ContainerTableViewController alloc] init];
             [self.navigationController pushViewController:containerTableVC animated:YES];
             break;
         }
-        case 6: {
+        case 7: {
             NSArrayTestViewController *nsArrayTest = [[NSArrayTestViewController alloc] init];
             [self.navigationController pushViewController:nsArrayTest animated:YES];
             break;
         }
-        case 7: {
+        case 8: {
             UIWebViewController *webViewTest = [[UIWebViewController alloc] init];
             [self.navigationController pushViewController:webViewTest animated:YES];
             break;
         }
-        case 8: {
+        case 9: {
             CalenderTestViewController *calenderTest = [[CalenderTestViewController alloc] init];
             [self.navigationController pushViewController:calenderTest animated:YES];
+            break;
+        }
+        case 10: {
+            UICollectionViewTestViewController *uiCollectionViewTest = [[UICollectionViewTestViewController alloc] init];
+            [self.navigationController pushViewController:uiCollectionViewTest animated:YES];
             break;
         }
         default:

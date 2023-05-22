@@ -86,7 +86,8 @@
     event.alarms = @[@(-300)];
     event.url = @"sinaweibo://chatroom?container_id=2321324874220831375536&live_id=1022:2321324874220831375536&width=1280&height=720&livetype=wblive&cover=https%3A%2F%2Fwx4.sinaimg.cn%2Flarge%2Fcf58b0b5ly8hbjho69rmwj21hc0u07bl.jpg&mid=4874221110429666";
 //    [self writeOne:event];
-    [self writeTwo:event];
+//    [self writeTwo:event];
+    [self writeThree:event];
 }
 
 - (void)writeOne:(WBAdSdkCalendarEvent *)event
@@ -163,13 +164,13 @@
 {
     [[WMEventCalendarTool sharedEventCalendar] checkCalendarCanUsedCompletion:^(BOOL granted, NSError *error) {
         // 添加日历源
-//        [[WMEventCalendarTool sharedEventCalendar] createCalendarIdentifier:@"EventCalendar_1" addCalendarTitle:@"行程" addCompletion:^(BOOL granted, NSError *error) {
-//            if (!error) {
-//                NSLog(@"成功");
-//            }else{
-//                NSLog(@"%@",error.description);
-//            }
-//        }];
+        [[WMEventCalendarTool sharedEventCalendar] createCalendarIdentifier:@"EventCalendar_1" addCalendarTitle:@"行程" addCompletion:^(BOOL granted, NSError *error) {
+            if (!error) {
+                NSLog(@"成功");
+            }else{
+                NSLog(@"%@",error.description);
+            }
+        }];
         
         //            [[WMEventCalendarTool sharedEventCalendar] createCalendarIdentifier:@"EventCalendar_2" addCalendarTitle:@"工作" addCompletion:^(BOOL granted, NSError *error) {
         //                if (!error) {
