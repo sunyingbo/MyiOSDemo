@@ -36,14 +36,34 @@
     return self.array.count;
 }
 
+- (UISwipeActionsConfiguration *)tableView:(UITableView *)tableView leadingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIContextualAction *leftAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleDestructive title:@"左侧" handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL)) {
+        NSLog(@"yingbo3 left button");
+    }];
+    return [UISwipeActionsConfiguration configurationWithActions:@[leftAction]];
+}
+
+- (UISwipeActionsConfiguration *)tableView:(UITableView *)tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIContextualAction *rightAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleDestructive title:@"右侧" handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL)) {
+        NSLog(@"yingbo3 right button");
+    }];
+    return [UISwipeActionsConfiguration configurationWithActions:@[rightAction]];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellIdentifier = @"cell";
-    SwipeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+//    SwipeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+//    if (!cell) {
+//        cell = [[SwipeTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+//    }
+//    [cell updateCell:self.array[indexPath.row]];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (!cell) {
-        cell = [[SwipeTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
-    [cell updateCell:self.array[indexPath.row]];
     return cell;
 }
 
