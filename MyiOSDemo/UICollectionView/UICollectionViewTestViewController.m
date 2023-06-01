@@ -9,6 +9,9 @@
 #import "FlowLayoutViewController.h"
 #import "FlowLayout2ViewController.h"
 #import "FlowLayout3ViewController.h"
+#import "FlowLayout4ViewController.h"
+#import "FlowLayout5ViewController.h"
+#import "FlowLayout6ViewController.h"
 
 @interface UICollectionViewTestViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -20,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.array = [[NSMutableArray alloc] initWithObjects:@"FlowLayout", @"FlowLayout2", @"FlowLayout3", nil];
+    self.array = [[NSMutableArray alloc] initWithObjects:@"FlowLayout", @"FlowLayout2", @"FlowLayout3", @"FlowLayout4", @"FlowLayout5", @"FlowLayout6", nil];
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     tableView.delegate = self;
@@ -71,6 +74,21 @@
         case 2: {
             FlowLayout3ViewController *flowLayout3 = [[FlowLayout3ViewController alloc] init];
             [self.navigationController pushViewController:flowLayout3 animated:YES];
+            break;
+        }
+        case 3: {
+            FlowLayout4ViewController *flowLayout4 = [[FlowLayout4ViewController alloc] init];
+            [self.navigationController pushViewController:flowLayout4 animated:YES];
+            break;
+        }
+        case 4: {
+            FlowLayout5ViewController *flowLayout5 = [[FlowLayout5ViewController alloc] init];
+            [self.navigationController pushViewController:flowLayout5 animated:YES];
+            break;
+        }
+        case 5: {
+            FlowLayout6ViewController *flowLayout6 = [[FlowLayout6ViewController alloc] init];
+            [self.navigationController pushViewController:flowLayout6 animated:YES];
             break;
         }
     }
