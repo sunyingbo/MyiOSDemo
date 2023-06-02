@@ -17,6 +17,7 @@
 #import "UIWebViewController.h"
 #import "CalenderTestViewController.h"
 #import "UICollectionViewTestViewController.h"
+#import "GZipTestViewController.h"
 #import <dlfcn.h>
 #import <libkern/OSAtomic.h>
 
@@ -31,7 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.array = [[NSMutableArray alloc] initWithObjects:@"cell 的移动", @"cell 的删除", @"cell 的添加", @"SwipeTableCell", @"TableView 的联动", @"二级列表", @"侧边栏", @"NSArray Test", @"UIWebView", @"日历读写", @"UICollectionView", nil];
+    self.array = [[NSMutableArray alloc] initWithObjects:@"cell 的移动", @"cell 的删除", @"cell 的添加", @"SwipeTableCell", @"TableView 的联动", @"二级列表", @"侧边栏", @"NSArray Test", @"UIWebView", @"日历读写", @"UICollectionView", @"GZip", nil];
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     tableView.delegate = self;
@@ -124,6 +125,11 @@
         case 10: {
             UICollectionViewTestViewController *uiCollectionViewTest = [[UICollectionViewTestViewController alloc] init];
             [self.navigationController pushViewController:uiCollectionViewTest animated:YES];
+            break;
+        }
+        case 11: {
+            GZipTestViewController *gzipTest = [[GZipTestViewController alloc] init];
+            [self.navigationController pushViewController:gzipTest animated:YES];
             break;
         }
         default:
