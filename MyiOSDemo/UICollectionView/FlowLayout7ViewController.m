@@ -8,6 +8,8 @@
 #import "FlowLayout7ViewController.h"
 #import "PopView.h"
 #import "Masonry.h"
+#import "Constant.h"
+#import "ItemModel.h"
 
 @interface FlowLayout7ViewController ()<PopViewDelegate>
 
@@ -48,14 +50,44 @@
     }];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)showPhotoButtonClicked:(UIButton *)button
+{
+    [self.popView showInSuperView:self.view];
 }
-*/
+
+- (void)closePopView
+{
+    [self.popView removeFromSuperview];
+}
+
+- (void)selectedHero:(ItemModel *)item
+{
+    [self closePopView];
+    self.imageView.image = [UIImage imageNamed:item.imageName];
+}
+
+- (PopView *)popView
+{
+    if (!_popView) {
+        _popView = [[PopView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+        _popView.dataSource = self.dataSource;
+        _popView.delegate = self;
+    }
+    return _popView;
+}
+
+- (NSMutableArray *)dataSource
+{
+    if (!_dataSource) {
+        _dataSource = [[NSMutableArray alloc] init];
+        for (NSInteger i = 0; i < 11; i++) {
+            ItemModel *model = [[ItemModel alloc] init];
+            model.imageName = [NSString stringWithFormat:@"%zd", i];
+            model.titleName = [NSString stringWithFormat:@"第%zd张", i];
+            [_dataSource addObject:model];
+        }
+    }
+    return _dataSource;
+}
 
 @end
