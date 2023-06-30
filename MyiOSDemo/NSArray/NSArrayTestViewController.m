@@ -14,6 +14,7 @@
 @interface NSArrayTestViewController ()
 
 @property (nonatomic, strong) NSMutableArray *peopleArray;
+@property (nonatomic, strong) NSMutableArray *commonArray;
 @property (nonatomic, strong) void (^block)(void);
 
 @end
@@ -52,10 +53,19 @@
     [copyButton2 addTarget:self action:@selector(copyArray2:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:copyButton2];
     
+    UIButton *removeButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    removeButton.backgroundColor = [UIColor lightGrayColor];
+    removeButton.frame = CGRectMake(10, 540, 300, 100);
+    [removeButton setTitle:@"remove" forState:UIControlStateNormal];
+    [removeButton addTarget:self action:@selector(remove:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:removeButton];
+    
     for (int i = 0; i < 65; i++) {
         [self.peopleArray addObject:[[People alloc] init]];
         [self.peopleArray addObject:[[Student alloc] init]];
     }
+    
+    self.commonArray = [[NSMutableArray alloc] initWithArray:@[@"A", @"B", @"B", @"C", @"B", @"D"]];
     
     __weak typeof(self) weakSelf = self;
     CFRunLoopRef runLoop = CFRunLoopGetCurrent();
@@ -142,6 +152,38 @@
     NSTimeInterval duration = [end_api timeIntervalSinceDate:start_date];
     NSString *durationString = [NSString stringWithFormat:@"%lf", duration];
     NSLog(@"yingbo3 copyArray2 : %@", durationString);
+}
+
+- (void)remove:(UIButton *)removeButton
+{
+//    for (NSString *str in self.commonArray) {
+//        if ([str isEqualToString:@"B"]) {
+//            [self.commonArray removeObject:str];
+//        }
+//    }
+    
+//    for (int i = 0; i < self.commonArray.count; i++) {
+//        NSString *str = self.commonArray[i];
+//        if ([str isEqualToString:@"B"]) {
+//            [self.commonArray removeObject:str];
+//        }
+//    }
+    
+//    [self.commonArray enumerateObjectsUsingBlock:^(NSString *str, NSUInteger idx, BOOL * _Nonnull stop) {
+//        if ([str isEqualToString:@"B"]) {
+//            [self.commonArray removeObject:str];
+//        }
+//    }];
+    
+    NSArray *array = [self.commonArray copy];
+    [array enumerateObjectsUsingBlock:^(NSString *str, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([str isEqualToString:@"B"]) {
+            [self.commonArray removeObject:str];
+//            [self.commonArray removeObjectAtIndex:idx];
+            NSLog(@"yingbo3 array = %@", self.commonArray);
+        }
+    }];
+    NSLog(@"yingbo3 array = %@", self.commonArray);
 }
 
 @end
