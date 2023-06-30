@@ -64,6 +64,10 @@
 		65C6BD932A28BBE1001DF359 /* FlowLayout6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C6BD922A28BBE1001DF359 /* FlowLayout6ViewController.m */; };
 		65C6BD972A299029001DF359 /* GZipTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C6BD962A299029001DF359 /* GZipTestViewController.m */; };
 		65C6BD9A2A299082001DF359 /* GZipTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C6BD992A299082001DF359 /* GZipTools.m */; };
+		65DA818F2A4E7EE300D9C380 /* CardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA818E2A4E7EE300D9C380 /* CardLayout.m */; };
+		65DA81922A4EA86900D9C380 /* CardSelectLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA81912A4EA86900D9C380 /* CardSelectLayout.m */; };
+		65DA81952A4EAD4200D9C380 /* CardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA81942A4EAD4200D9C380 /* CardCollectionViewCell.m */; };
+		65DA81982A4EB3BD00D9C380 /* FlowLayout8ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA81972A4EB3BD00D9C380 /* FlowLayout8ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -179,6 +183,14 @@
 		65C6BD962A299029001DF359 /* GZipTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GZipTestViewController.m; sourceTree = "<group>"; };
 		65C6BD982A299082001DF359 /* GZipTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZipTools.h; sourceTree = "<group>"; };
 		65C6BD992A299082001DF359 /* GZipTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GZipTools.m; sourceTree = "<group>"; };
+		65DA818D2A4E7EE300D9C380 /* CardLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardLayout.h; sourceTree = "<group>"; };
+		65DA818E2A4E7EE300D9C380 /* CardLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardLayout.m; sourceTree = "<group>"; };
+		65DA81902A4EA86900D9C380 /* CardSelectLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardSelectLayout.h; sourceTree = "<group>"; };
+		65DA81912A4EA86900D9C380 /* CardSelectLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardSelectLayout.m; sourceTree = "<group>"; };
+		65DA81932A4EAD4200D9C380 /* CardCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardCollectionViewCell.h; sourceTree = "<group>"; };
+		65DA81942A4EAD4200D9C380 /* CardCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardCollectionViewCell.m; sourceTree = "<group>"; };
+		65DA81962A4EB3BD00D9C380 /* FlowLayout8ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowLayout8ViewController.h; sourceTree = "<group>"; };
+		65DA81972A4EB3BD00D9C380 /* FlowLayout8ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowLayout8ViewController.m; sourceTree = "<group>"; };
 		D80C590508C50F7317CB02EB /* Pods-MyiOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyiOSDemo.release.xcconfig"; path = "Target Support Files/Pods-MyiOSDemo/Pods-MyiOSDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -258,6 +270,8 @@
 				65C6BD922A28BBE1001DF359 /* FlowLayout6ViewController.m */,
 				655207D82A42F80700585BC2 /* FlowLayout7ViewController.h */,
 				655207D92A42F80700585BC2 /* FlowLayout7ViewController.m */,
+				65DA81962A4EB3BD00D9C380 /* FlowLayout8ViewController.h */,
+				65DA81972A4EB3BD00D9C380 /* FlowLayout8ViewController.m */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -301,6 +315,10 @@
 				655207C22A40088500585BC2 /* UIView+Extension.m */,
 				655207D22A403D9700585BC2 /* PopView.h */,
 				655207D32A403D9700585BC2 /* PopView.m */,
+				65DA818D2A4E7EE300D9C380 /* CardLayout.h */,
+				65DA818E2A4E7EE300D9C380 /* CardLayout.m */,
+				65DA81902A4EA86900D9C380 /* CardSelectLayout.h */,
+				65DA81912A4EA86900D9C380 /* CardSelectLayout.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -513,6 +531,8 @@
 				65C6BD7C2A24C6D7001DF359 /* CollectionViewCell6.m */,
 				655207CC2A4030AE00585BC2 /* PopCollectionViewCell.h */,
 				655207CD2A4030AE00585BC2 /* PopCollectionViewCell.m */,
+				65DA81932A4EAD4200D9C380 /* CardCollectionViewCell.h */,
+				65DA81942A4EAD4200D9C380 /* CardCollectionViewCell.m */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -655,10 +675,12 @@
 				65C6BD832A25E67E001DF359 /* FlowLayout_6.m in Sources */,
 				657ECAA129A89CBE003B0351 /* SecondListViewController.m in Sources */,
 				657ECA9229A894A4003B0351 /* LinkageViewController.m in Sources */,
+				65DA81982A4EB3BD00D9C380 /* FlowLayout8ViewController.m in Sources */,
 				653C5D0229C45C0200D0631D /* Student.m in Sources */,
 				653F520E2A0A2A7E00464D86 /* UICollectionViewTestViewController.m in Sources */,
 				653F52112A0A2E3700464D86 /* FlowLayoutViewController.m in Sources */,
 				655207CB2A40304900585BC2 /* ItemModel.m in Sources */,
+				65DA81922A4EA86900D9C380 /* CardSelectLayout.m in Sources */,
 				65C6BD7D2A24C6D7001DF359 /* CollectionViewCell6.m in Sources */,
 				6562A75F29D2FD4D00C35BA9 /* UIWebViewController.m in Sources */,
 				65C6BD702A2481E2001DF359 /* FlowLayout4.m in Sources */,
@@ -672,6 +694,7 @@
 				65C6BD792A249BB7001DF359 /* FlowLayout5ViewController.m in Sources */,
 				655ACAAC29B8C191002325A2 /* ProductModel.m in Sources */,
 				653F52182A0B719D00464D86 /* FlowLayout2ViewController.m in Sources */,
+				65DA81952A4EAD4200D9C380 /* CardCollectionViewCell.m in Sources */,
 				657ECAB129A8A647003B0351 /* FriendGroupHeaderView.m in Sources */,
 				657ECA9529A894D7003B0351 /* MoveViewController.m in Sources */,
 				657ECA9929A897D7003B0351 /* DeleteViewController.m in Sources */,
@@ -685,6 +708,7 @@
 				65C6BD932A28BBE1001DF359 /* FlowLayout6ViewController.m in Sources */,
 				653F52302A0E5FBE00464D86 /* SwipCellTestViewController.m in Sources */,
 				653F52332A0E618B00464D86 /* SwipeTableViewCell.m in Sources */,
+				65DA818F2A4E7EE300D9C380 /* CardLayout.m in Sources */,
 				653C5CF629C4493600D0631D /* NSArrayTestViewController.m in Sources */,
 				652D629829F6B02B002C0C56 /* CalenderManager.m in Sources */,
 				65C6BD972A299029001DF359 /* GZipTestViewController.m in Sources */,

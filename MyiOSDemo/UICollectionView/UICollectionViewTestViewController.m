@@ -4,6 +4,7 @@
 //
 //  Created by yingbo3 on 2023/5/9.
 //
+// 网址：https://www.cnblogs.com/fengmin/p/6221352.html
 
 #import "UICollectionViewTestViewController.h"
 #import "FlowLayoutViewController.h"
@@ -13,6 +14,7 @@
 #import "FlowLayout5ViewController.h"
 #import "FlowLayout6ViewController.h"
 #import "FlowLayout7ViewController.h"
+#import "FlowLayout8ViewController.h"
 
 @interface UICollectionViewTestViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -24,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.array = [[NSMutableArray alloc] initWithObjects:@"FlowLayout", @"FlowLayout2", @"FlowLayout3", @"FlowLayout4", @"FlowLayout5", @"FlowLayout6", @"FlowLayout7", nil];
+    self.array = [[NSMutableArray alloc] initWithObjects:@"FlowLayout", @"FlowLayout2", @"FlowLayout3", @"FlowLayout4", @"FlowLayout5", @"FlowLayout6", @"FlowLayout7", @"FlowLayout8", nil];
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     tableView.delegate = self;
@@ -95,6 +97,11 @@
         case 6: {
             FlowLayout7ViewController *flowLayout7 = [[FlowLayout7ViewController alloc] init];
             [self.navigationController pushViewController:flowLayout7 animated:YES];
+            break;
+        }
+        case 7: {
+            FlowLayout8ViewController *flowLayout8 = [[FlowLayout8ViewController alloc] init];
+            [self.navigationController pushViewController:flowLayout8 animated:YES];
             break;
         }
     }
