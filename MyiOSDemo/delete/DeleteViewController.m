@@ -59,8 +59,14 @@
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.array removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+//        [self.array removeObjectAtIndex:indexPath.row];
+//        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+        [self.array removeObjectsInRange:NSMakeRange(indexPath.row + 1, 2)];
+        NSMutableArray *deleteIndexPaths = [NSMutableArray arrayWithCapacity:10];
+        [deleteIndexPaths addObject:[NSIndexPath indexPathForRow:indexPath.row + 1 inSection:indexPath.section]];
+        [deleteIndexPaths addObject:[NSIndexPath indexPathForRow:indexPath.row + 2 inSection:indexPath.section]];
+        [tableView deleteRowsAtIndexPaths:deleteIndexPaths withRowAnimation:UITableViewRowAnimationFade];
     }
 }
 

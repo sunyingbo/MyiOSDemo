@@ -65,9 +65,17 @@
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //向数组中添加数据
-    [self.array insertObject:@"aaaa" atIndex:indexPath.row];
+//    [self.array insertObject:@"aaaa" atIndex:indexPath.row];
+//
+//    [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath, nil] withRowAnimation:UITableViewRowAnimationAutomatic];
     
-    [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath, nil] withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self.array insertObjects:@[@"bbbb", @"cccc"] atIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(indexPath.row + 1, 2)]];
+    
+    NSMutableArray *insertIndexPaths = [NSMutableArray arrayWithCapacity:10];
+    [insertIndexPaths addObject:[NSIndexPath indexPathForRow:indexPath.row + 1 inSection:indexPath.section]];
+    [insertIndexPaths addObject:[NSIndexPath indexPathForRow:indexPath.row + 2 inSection:indexPath.section]];
+    [self.tableView insertRowsAtIndexPaths:insertIndexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+    
 }
 
 /*
