@@ -35,6 +35,37 @@
     [self.view addSubview:tableView];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    for (int i = 0; i <= 100; i++) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            [self.class checkAppInstalledWithScheme:@"pddopen://"];
+        });
+    }
+}
+
++ (BOOL)checkAppInstalledWithScheme:(NSString *)scheme
+{
+    BOOL canOpen = [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:scheme]];
+    return canOpen;
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
