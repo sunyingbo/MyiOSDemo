@@ -3,4 +3,182 @@
    uuid = "346B0E44-382B-4CC9-AB89-75B6CBF2C86D"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B8AC2AD4-832B-4DE3-9EAD-6D6B317EB606"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyiOSDemo/UICollectionView/FlowLayoutViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "-viewWillAppear:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B8AC2AD4-832B-4DE3-9EAD-6D6B317EB606 - 4b244f960d85aed0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[FlowLayoutViewController numberOfSectionsInCollectionView:]"
+                  moduleName = "MyiOSDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yingbo3/Project/iosProjects/MyiOSDemo/MyiOSDemo/UICollectionView/FlowLayoutViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "B8AC2AD4-832B-4DE3-9EAD-6D6B317EB606 - 1e42813216be552d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[FlowLayoutViewController viewWillAppear:]"
+                  moduleName = "MyiOSDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yingbo3/Project/iosProjects/MyiOSDemo/MyiOSDemo/UICollectionView/FlowLayoutViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "259C6D0D-BDDE-4D82-8E40-B70598B446C3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyiOSDemo/UICollectionView/FlowLayoutViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "-viewDidAppear:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "259C6D0D-BDDE-4D82-8E40-B70598B446C3 - b4d4ee2fe12979af"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[FlowLayoutViewController collectionView:numberOfItemsInSection:]"
+                  moduleName = "MyiOSDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yingbo3/Project/iosProjects/MyiOSDemo/MyiOSDemo/UICollectionView/FlowLayoutViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "259C6D0D-BDDE-4D82-8E40-B70598B446C3 - dde73caa5964b102"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[FlowLayoutViewController viewDidAppear:]"
+                  moduleName = "MyiOSDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yingbo3/Project/iosProjects/MyiOSDemo/MyiOSDemo/UICollectionView/FlowLayoutViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "066A5C3E-7A50-4A1D-AF8A-83A16B20E5D5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyiOSDemo/UICollectionView/FlowLayoutViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "-viewWillDisappear:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "066A5C3E-7A50-4A1D-AF8A-83A16B20E5D5 - 65f1c230f4885d3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[FlowLayoutViewController collectionView:cellForItemAtIndexPath:]"
+                  moduleName = "MyiOSDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yingbo3/Project/iosProjects/MyiOSDemo/MyiOSDemo/UICollectionView/FlowLayoutViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "066A5C3E-7A50-4A1D-AF8A-83A16B20E5D5 - ea29a9a87c94d892"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[FlowLayoutViewController viewWillDisappear:]"
+                  moduleName = "MyiOSDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yingbo3/Project/iosProjects/MyiOSDemo/MyiOSDemo/UICollectionView/FlowLayoutViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22815EB1-EFA6-44AE-A12D-1565513BB06C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyiOSDemo/UICollectionView/FlowLayoutViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "-viewDidDisappear:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C36CD972-5850-4B13-B607-3BB4DB2DC45B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyiOSDemo/SKProducts/SKProductsTestViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "-productsRequest:didReceiveResponse:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

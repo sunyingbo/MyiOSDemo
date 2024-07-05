@@ -34,10 +34,16 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *cell1 = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cell1];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cell1];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        if (indexPath.row == 0) {
+            UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(12, 0, cell.contentView.frame.size.width + 50, cell.contentView.frame.size.height)];
+            textField.keyboardType = UIKeyboardTypeDefault;
+            textField.returnKeyType = UIReturnKeyDone;
+            textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+            [cell.contentView addSubview:textField];
+        }
     }
     cell.textLabel.text = self.array[indexPath.row];
     return cell;

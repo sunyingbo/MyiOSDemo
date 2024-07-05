@@ -19,6 +19,7 @@
 #import "UICollectionViewTestViewController.h"
 #import "GZipTestViewController.h"
 #import "NSJSONTestViewController.h"
+#import "SKProductsTestViewController.h"
 #import <dlfcn.h>
 #import <libkern/OSAtomic.h>
 
@@ -33,7 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.array = [[NSMutableArray alloc] initWithObjects:@"cell 的移动", @"cell 的删除", @"cell 的添加", @"SwipeTableCell", @"TableView 的联动", @"二级列表", @"侧边栏", @"NSArray Test", @"UIWebView", @"日历读写", @"UICollectionView", @"GZip", @"NSJSON", nil];
+    self.array = [[NSMutableArray alloc] initWithObjects:@"cell 的移动", @"cell 的删除", @"cell 的添加", @"SwipeTableCell", @"TableView 的联动", @"二级列表", @"侧边栏", @"NSArray Test", @"UIWebView", @"日历读写", @"UICollectionView", @"GZip", @"NSJSON", @"SKProduct", nil];
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     tableView.delegate = self;
@@ -136,6 +137,11 @@
         case 12: {
             NSJSONTestViewController *jsonTest = [[NSJSONTestViewController alloc] init];
             [self.navigationController pushViewController:jsonTest animated:YES];
+            break;
+        }
+        case 13: {
+            SKProductsTestViewController *skProductTest = [[SKProductsTestViewController alloc] init];
+            [self.navigationController pushViewController:skProductTest animated:YES];
             break;
         }
         default:

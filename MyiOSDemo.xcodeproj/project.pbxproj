@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		5A1328C6B50E69E1B40FC26D /* Pods_MyiOSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1303FEEEC1DB2F549543FC /* Pods_MyiOSDemo.framework */; };
 		650194B529FBBE3100C82689 /* WMEventCalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 650194B329FBBE3100C82689 /* WMEventCalendarTool.m */; };
+		6510B9792A6120D10018658D /* NSJSONTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6510B9782A6120D10018658D /* NSJSONTestViewController.m */; };
 		652D629529F6AFCA002C0C56 /* CalenderTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652D629429F6AFCA002C0C56 /* CalenderTestViewController.m */; };
 		652D629829F6B02B002C0C56 /* CalenderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 652D629729F6B02B002C0C56 /* CalenderManager.m */; };
+		6533AF802AF4DD6B002B17E5 /* SKProductsTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6533AF7F2AF4DD6B002B17E5 /* SKProductsTestViewController.m */; };
 		653C5CF629C4493600D0631D /* NSArrayTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653C5CF529C4493600D0631D /* NSArrayTestViewController.m */; };
 		653C5CFA29C44A2A00D0631D /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 653C5CF929C44A2A00D0631D /* People.m */; };
 		653C5CFF29C453F600D0631D /* PeopleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 653C5CFE29C453F600D0631D /* PeopleManager.m */; };
@@ -64,10 +66,21 @@
 		65C6BD932A28BBE1001DF359 /* FlowLayout6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C6BD922A28BBE1001DF359 /* FlowLayout6ViewController.m */; };
 		65C6BD972A299029001DF359 /* GZipTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C6BD962A299029001DF359 /* GZipTestViewController.m */; };
 		65C6BD9A2A299082001DF359 /* GZipTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C6BD992A299082001DF359 /* GZipTools.m */; };
+		65D9C8F32A526C1400F984F6 /* CarouselViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9C8F22A526C1400F984F6 /* CarouselViewModel.m */; };
+		65D9C8F62A526CBC00F984F6 /* CarouseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9C8F52A526CBC00F984F6 /* CarouseModel.m */; };
+		65D9C8FA2A526E7300F984F6 /* CarouselUIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9C8F92A526E7300F984F6 /* CarouselUIService.m */; };
+		65D9C8FD2A52701000F984F6 /* CarouseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9C8FC2A52701000F984F6 /* CarouseCollectionViewCell.m */; };
+		65D9C9002A527C2900F984F6 /* FlowLayout9ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9C8FF2A527C2900F984F6 /* FlowLayout9ViewController.m */; };
+		65D9C9042A52B31000F984F6 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9C9032A52B31000F984F6 /* NSObject+Property.m */; };
+		65D9C9072A52D17900F984F6 /* GridListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9C9062A52D17900F984F6 /* GridListModel.m */; };
+		65D9C90A2A52D20B00F984F6 /* GridListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9C9092A52D20B00F984F6 /* GridListCollectionViewCell.m */; };
+		65D9C90D2A52E5D800F984F6 /* FlowLayout10ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9C90C2A52E5D800F984F6 /* FlowLayout10ViewController.m */; };
 		65DA818F2A4E7EE300D9C380 /* CardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA818E2A4E7EE300D9C380 /* CardLayout.m */; };
 		65DA81922A4EA86900D9C380 /* CardSelectLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA81912A4EA86900D9C380 /* CardSelectLayout.m */; };
 		65DA81952A4EAD4200D9C380 /* CardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA81942A4EAD4200D9C380 /* CardCollectionViewCell.m */; };
 		65DA81982A4EB3BD00D9C380 /* FlowLayout8ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA81972A4EB3BD00D9C380 /* FlowLayout8ViewController.m */; };
+		65DA819B2A4EF3F000D9C380 /* FlowLayout9.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA819A2A4EF3F000D9C380 /* FlowLayout9.m */; };
+		65E95AFB2AF8E9AB008CF945 /* MySKProductSwiftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E95AFA2AF8E9AB008CF945 /* MySKProductSwiftTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,10 +88,15 @@
 		4DC89501FD113F43A707E6A7 /* Pods-MyiOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyiOSDemo.debug.xcconfig"; path = "Target Support Files/Pods-MyiOSDemo/Pods-MyiOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		650194B329FBBE3100C82689 /* WMEventCalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMEventCalendarTool.m; sourceTree = "<group>"; };
 		650194B429FBBE3100C82689 /* WMEventCalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMEventCalendarTool.h; sourceTree = "<group>"; };
+		6510B9772A6120D10018658D /* NSJSONTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSJSONTestViewController.h; sourceTree = "<group>"; };
+		6510B9782A6120D10018658D /* NSJSONTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSJSONTestViewController.m; sourceTree = "<group>"; };
 		652D629329F6AFCA002C0C56 /* CalenderTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalenderTestViewController.h; sourceTree = "<group>"; };
 		652D629429F6AFCA002C0C56 /* CalenderTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalenderTestViewController.m; sourceTree = "<group>"; };
 		652D629629F6B02B002C0C56 /* CalenderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalenderManager.h; sourceTree = "<group>"; };
 		652D629729F6B02B002C0C56 /* CalenderManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalenderManager.m; sourceTree = "<group>"; };
+		6533AF7E2AF4DD6B002B17E5 /* SKProductsTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKProductsTestViewController.h; sourceTree = "<group>"; };
+		6533AF7F2AF4DD6B002B17E5 /* SKProductsTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKProductsTestViewController.m; sourceTree = "<group>"; };
+		6533AF812AF5183B002B17E5 /* MySKProductTest.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = MySKProductTest.storekit; sourceTree = "<group>"; };
 		653C5CF429C4493600D0631D /* NSArrayTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSArrayTestViewController.h; sourceTree = "<group>"; };
 		653C5CF529C4493600D0631D /* NSArrayTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArrayTestViewController.m; sourceTree = "<group>"; };
 		653C5CF829C44A2A00D0631D /* People.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
@@ -183,6 +201,24 @@
 		65C6BD962A299029001DF359 /* GZipTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GZipTestViewController.m; sourceTree = "<group>"; };
 		65C6BD982A299082001DF359 /* GZipTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZipTools.h; sourceTree = "<group>"; };
 		65C6BD992A299082001DF359 /* GZipTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GZipTools.m; sourceTree = "<group>"; };
+		65D9C8F12A526C1400F984F6 /* CarouselViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarouselViewModel.h; sourceTree = "<group>"; };
+		65D9C8F22A526C1400F984F6 /* CarouselViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarouselViewModel.m; sourceTree = "<group>"; };
+		65D9C8F42A526CBC00F984F6 /* CarouseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarouseModel.h; sourceTree = "<group>"; };
+		65D9C8F52A526CBC00F984F6 /* CarouseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarouseModel.m; sourceTree = "<group>"; };
+		65D9C8F82A526E7300F984F6 /* CarouselUIService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarouselUIService.h; sourceTree = "<group>"; };
+		65D9C8F92A526E7300F984F6 /* CarouselUIService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarouselUIService.m; sourceTree = "<group>"; };
+		65D9C8FB2A52701000F984F6 /* CarouseCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarouseCollectionViewCell.h; sourceTree = "<group>"; };
+		65D9C8FC2A52701000F984F6 /* CarouseCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarouseCollectionViewCell.m; sourceTree = "<group>"; };
+		65D9C8FE2A527C2900F984F6 /* FlowLayout9ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowLayout9ViewController.h; sourceTree = "<group>"; };
+		65D9C8FF2A527C2900F984F6 /* FlowLayout9ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowLayout9ViewController.m; sourceTree = "<group>"; };
+		65D9C9022A52B31000F984F6 /* NSObject+Property.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
+		65D9C9032A52B31000F984F6 /* NSObject+Property.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
+		65D9C9052A52D17900F984F6 /* GridListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridListModel.h; sourceTree = "<group>"; };
+		65D9C9062A52D17900F984F6 /* GridListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridListModel.m; sourceTree = "<group>"; };
+		65D9C9082A52D20B00F984F6 /* GridListCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridListCollectionViewCell.h; sourceTree = "<group>"; };
+		65D9C9092A52D20B00F984F6 /* GridListCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridListCollectionViewCell.m; sourceTree = "<group>"; };
+		65D9C90B2A52E5D800F984F6 /* FlowLayout10ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowLayout10ViewController.h; sourceTree = "<group>"; };
+		65D9C90C2A52E5D800F984F6 /* FlowLayout10ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowLayout10ViewController.m; sourceTree = "<group>"; };
 		65DA818D2A4E7EE300D9C380 /* CardLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardLayout.h; sourceTree = "<group>"; };
 		65DA818E2A4E7EE300D9C380 /* CardLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardLayout.m; sourceTree = "<group>"; };
 		65DA81902A4EA86900D9C380 /* CardSelectLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardSelectLayout.h; sourceTree = "<group>"; };
@@ -191,6 +227,10 @@
 		65DA81942A4EAD4200D9C380 /* CardCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardCollectionViewCell.m; sourceTree = "<group>"; };
 		65DA81962A4EB3BD00D9C380 /* FlowLayout8ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowLayout8ViewController.h; sourceTree = "<group>"; };
 		65DA81972A4EB3BD00D9C380 /* FlowLayout8ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowLayout8ViewController.m; sourceTree = "<group>"; };
+		65DA81992A4EF3F000D9C380 /* FlowLayout9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowLayout9.h; sourceTree = "<group>"; };
+		65DA819A2A4EF3F000D9C380 /* FlowLayout9.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowLayout9.m; sourceTree = "<group>"; };
+		65E95AF92AF8E9AA008CF945 /* MyiOSDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyiOSDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		65E95AFA2AF8E9AB008CF945 /* MySKProductSwiftTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySKProductSwiftTest.swift; sourceTree = "<group>"; };
 		D80C590508C50F7317CB02EB /* Pods-MyiOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyiOSDemo.release.xcconfig"; path = "Target Support Files/Pods-MyiOSDemo/Pods-MyiOSDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -214,6 +254,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6510B9762A6120B00018658D /* NSJSON */ = {
+			isa = PBXGroup;
+			children = (
+				6510B9772A6120D10018658D /* NSJSONTestViewController.h */,
+				6510B9782A6120D10018658D /* NSJSONTestViewController.m */,
+			);
+			path = NSJSON;
+			sourceTree = "<group>";
+		};
 		652D629229F6AF9B002C0C56 /* Calender */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +274,18 @@
 				652D629729F6B02B002C0C56 /* CalenderManager.m */,
 			);
 			path = Calender;
+			sourceTree = "<group>";
+		};
+		6533AF7D2AF4DD21002B17E5 /* SKProducts */ = {
+			isa = PBXGroup;
+			children = (
+				6533AF7E2AF4DD6B002B17E5 /* SKProductsTestViewController.h */,
+				6533AF7F2AF4DD6B002B17E5 /* SKProductsTestViewController.m */,
+				6533AF812AF5183B002B17E5 /* MySKProductTest.storekit */,
+				65E95AFA2AF8E9AB008CF945 /* MySKProductSwiftTest.swift */,
+				65E95AF92AF8E9AA008CF945 /* MyiOSDemo-Bridging-Header.h */,
+			);
+			path = SKProducts;
 			sourceTree = "<group>";
 		};
 		653C5CF729C449FE00D0631D /* model */ = {
@@ -249,6 +310,7 @@
 		653F52082A0A293D00464D86 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				65D9C8F72A526E5700F984F6 /* service */,
 				655207C82A402FE600585BC2 /* Model */,
 				655207C42A402E0F00585BC2 /* Other */,
 				655207C02A4004CC00585BC2 /* View */,
@@ -272,6 +334,10 @@
 				655207D92A42F80700585BC2 /* FlowLayout7ViewController.m */,
 				65DA81962A4EB3BD00D9C380 /* FlowLayout8ViewController.h */,
 				65DA81972A4EB3BD00D9C380 /* FlowLayout8ViewController.m */,
+				65D9C8FE2A527C2900F984F6 /* FlowLayout9ViewController.h */,
+				65D9C8FF2A527C2900F984F6 /* FlowLayout9ViewController.m */,
+				65D9C90B2A52E5D800F984F6 /* FlowLayout10ViewController.h */,
+				65D9C90C2A52E5D800F984F6 /* FlowLayout10ViewController.m */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -293,6 +359,8 @@
 				65C6BD822A25E67E001DF359 /* FlowLayout_6.m */,
 				655207CF2A4030FE00585BC2 /* FlowLayout7.h */,
 				655207D02A4030FE00585BC2 /* FlowLayout7.m */,
+				65DA81992A4EF3F000D9C380 /* FlowLayout9.h */,
+				65DA819A2A4EF3F000D9C380 /* FlowLayout9.m */,
 			);
 			path = FlowLayout;
 			sourceTree = "<group>";
@@ -328,6 +396,8 @@
 			children = (
 				655207C52A402E3A00585BC2 /* Constant.h */,
 				655207C62A402E3A00585BC2 /* Constant.m */,
+				65D9C9022A52B31000F984F6 /* NSObject+Property.h */,
+				65D9C9032A52B31000F984F6 /* NSObject+Property.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -337,6 +407,12 @@
 			children = (
 				655207C92A40304900585BC2 /* ItemModel.h */,
 				655207CA2A40304900585BC2 /* ItemModel.m */,
+				65D9C8F12A526C1400F984F6 /* CarouselViewModel.h */,
+				65D9C8F22A526C1400F984F6 /* CarouselViewModel.m */,
+				65D9C8F42A526CBC00F984F6 /* CarouseModel.h */,
+				65D9C8F52A526CBC00F984F6 /* CarouseModel.m */,
+				65D9C9052A52D17900F984F6 /* GridListModel.h */,
+				65D9C9062A52D17900F984F6 /* GridListModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -362,6 +438,8 @@
 		65595D0E299A608500EB5370 /* MyiOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6533AF7D2AF4DD21002B17E5 /* SKProducts */,
+				6510B9762A6120B00018658D /* NSJSON */,
 				65C6BD942A299007001DF359 /* GZip */,
 				653F522D2A0E5F6200464D86 /* SwipCell */,
 				653F52082A0A293D00464D86 /* UICollectionView */,
@@ -533,6 +611,10 @@
 				655207CD2A4030AE00585BC2 /* PopCollectionViewCell.m */,
 				65DA81932A4EAD4200D9C380 /* CardCollectionViewCell.h */,
 				65DA81942A4EAD4200D9C380 /* CardCollectionViewCell.m */,
+				65D9C8FB2A52701000F984F6 /* CarouseCollectionViewCell.h */,
+				65D9C8FC2A52701000F984F6 /* CarouseCollectionViewCell.m */,
+				65D9C9082A52D20B00F984F6 /* GridListCollectionViewCell.h */,
+				65D9C9092A52D20B00F984F6 /* GridListCollectionViewCell.m */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -546,6 +628,15 @@
 				65C6BD992A299082001DF359 /* GZipTools.m */,
 			);
 			path = GZip;
+			sourceTree = "<group>";
+		};
+		65D9C8F72A526E5700F984F6 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				65D9C8F82A526E7300F984F6 /* CarouselUIService.h */,
+				65D9C8F92A526E7300F984F6 /* CarouselUIService.m */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 		D3B1CF122F75F5276DE52C0B /* Pods */ = {
@@ -590,6 +681,7 @@
 				TargetAttributes = {
 					65595D0B299A608500EB5370 = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -699,34 +791,47 @@
 				657ECA9529A894D7003B0351 /* MoveViewController.m in Sources */,
 				657ECA9929A897D7003B0351 /* DeleteViewController.m in Sources */,
 				655ACA9129B8973F002325A2 /* ContainerTableViewController.m in Sources */,
+				65D9C90D2A52E5D800F984F6 /* FlowLayout10ViewController.m in Sources */,
 				657ECA9D29A89B00003B0351 /* InsertViewController.m in Sources */,
 				653F521B2A0B73FE00464D86 /* FlowLayout3.m in Sources */,
+				65D9C8FD2A52701000F984F6 /* CarouseCollectionViewCell.m in Sources */,
 				655207C72A402E3A00585BC2 /* Constant.m in Sources */,
+				65D9C8F62A526CBC00F984F6 /* CarouseModel.m in Sources */,
 				657ECAAE29A8A50A003B0351 /* FriendTableViewCell.m in Sources */,
 				657ECAA829A89FDD003B0351 /* FriendGroupModel.m in Sources */,
 				653F521E2A0B8CB300464D86 /* FlowLayout3ViewController.m in Sources */,
 				65C6BD932A28BBE1001DF359 /* FlowLayout6ViewController.m in Sources */,
+				65E95AFB2AF8E9AB008CF945 /* MySKProductSwiftTest.swift in Sources */,
+				65D9C8F32A526C1400F984F6 /* CarouselViewModel.m in Sources */,
 				653F52302A0E5FBE00464D86 /* SwipCellTestViewController.m in Sources */,
 				653F52332A0E618B00464D86 /* SwipeTableViewCell.m in Sources */,
 				65DA818F2A4E7EE300D9C380 /* CardLayout.m in Sources */,
+				65D9C90A2A52D20B00F984F6 /* GridListCollectionViewCell.m in Sources */,
 				653C5CF629C4493600D0631D /* NSArrayTestViewController.m in Sources */,
 				652D629829F6B02B002C0C56 /* CalenderManager.m in Sources */,
+				65DA819B2A4EF3F000D9C380 /* FlowLayout9.m in Sources */,
 				65C6BD972A299029001DF359 /* GZipTestViewController.m in Sources */,
+				65D9C8FA2A526E7300F984F6 /* CarouselUIService.m in Sources */,
 				65595D22299A608700EB5370 /* main.m in Sources */,
 				650194B529FBBE3100C82689 /* WMEventCalendarTool.m in Sources */,
 				652D629529F6AFCA002C0C56 /* CalenderTestViewController.m in Sources */,
+				6510B9792A6120D10018658D /* NSJSONTestViewController.m in Sources */,
 				655207D42A403D9700585BC2 /* PopView.m in Sources */,
 				653C5CFF29C453F600D0631D /* PeopleManager.m in Sources */,
 				653F52152A0A44B100464D86 /* FlowLayout2.m in Sources */,
 				655ACAA029B8BB7D002325A2 /* SecondViewController.m in Sources */,
+				65D9C9002A527C2900F984F6 /* FlowLayout9ViewController.m in Sources */,
 				657ECA9129A894A4003B0351 /* ProductsViewController.m in Sources */,
 				655ACAB029B8C19B002325A2 /* ProductsHeaderView.m in Sources */,
 				65C6BD762A24980D001DF359 /* FlowLayout5.m in Sources */,
 				655207DA2A42F80700585BC2 /* FlowLayout7ViewController.m in Sources */,
 				655207C32A40088500585BC2 /* UIView+Extension.m in Sources */,
+				65D9C9042A52B31000F984F6 /* NSObject+Property.m in Sources */,
 				657ECAAB29A8A1C0003B0351 /* FriendModel.m in Sources */,
 				655207D12A4030FE00585BC2 /* FlowLayout7.m in Sources */,
+				65D9C9072A52D17900F984F6 /* GridListModel.m in Sources */,
 				65C6BD9A2A299082001DF359 /* GZipTools.m in Sources */,
+				6533AF802AF4DD6B002B17E5 /* SKProductsTestViewController.m in Sources */,
 				655ACAAD29B8C191002325A2 /* ProductGroupModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -869,6 +974,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 588AQ3AZQL;
@@ -889,6 +995,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sun.ios.demo.MyiOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyiOSDemo/SKProducts/MyiOSDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -899,6 +1008,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 588AQ3AZQL;
@@ -919,6 +1029,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sun.ios.demo.MyiOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyiOSDemo/SKProducts/MyiOSDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
